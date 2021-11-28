@@ -149,6 +149,7 @@ MonoBehaviour:
   speed: 5
   vertical: 0
   changeTime: 3
+  smokeEffect: {fileID: 7470153974029576999}
 --- !u!95 &6748595753701768131
 Animator:
   serializedVersion: 3
@@ -188,10 +189,6 @@ PrefabInstance:
       value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3471721301254558067, guid: c9ad9a9d25ce3604aaab9bf5711e084c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 3471721301254558067, guid: c9ad9a9d25ce3604aaab9bf5711e084c, type: 3}
       propertyPath: m_LocalPosition.z
       value: -6.413074
       objectReference: {fileID: 0}
@@ -228,5 +225,10 @@ PrefabInstance:
 --- !u!4 &7470153974029576998 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3471721301254558067, guid: c9ad9a9d25ce3604aaab9bf5711e084c, type: 3}
+  m_PrefabInstance: {fileID: 6306545074271304277}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7470153974029576999 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3471721301254558066, guid: c9ad9a9d25ce3604aaab9bf5711e084c, type: 3}
   m_PrefabInstance: {fileID: 6306545074271304277}
   m_PrefabAsset: {fileID: 0}
