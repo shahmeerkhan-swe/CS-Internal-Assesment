@@ -88,11 +88,10 @@ public class RubyController : MonoBehaviour
             invincibleTimer = timeInvincible;
 
             animator.SetTrigger("Hit");
-            ParticleSystem gettingHit = Instantiate(hitEffect, rigidbody2D.transform);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        Debug.Log(currentHealth + "/" + maxHealth);
+        HealthBarUI.instance.SetValue(currentHealth / (float)maxHealth);
     }
 
     void Launch()
