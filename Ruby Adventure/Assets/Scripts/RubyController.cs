@@ -26,7 +26,10 @@ public class RubyController : MonoBehaviour
     public GameObject projectilePrefab;
 
     public ParticleSystem hitEffect;
-    AudioSource audioSource; 
+    AudioSource audioSource;
+
+    public AudioClip throwSound;
+    public AudioClip hitSound;
 
     // Start is called before the first frame update
     void Start()
@@ -67,6 +70,7 @@ public class RubyController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             Launch();
+            PlaySound(throwSound);
         }
 
         if (Input.GetKeyDown(KeyCode.X))
@@ -102,6 +106,7 @@ public class RubyController : MonoBehaviour
             invincibleTimer = timeInvincible;
 
             animator.SetTrigger("Hit");
+            PlaySound(hitSound);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
@@ -118,7 +123,7 @@ public class RubyController : MonoBehaviour
 
     }
 
-    public void PlaySound(AudioClip, clip) 
+    public void PlaySound(AudioClip clip) 
     {
         audioSource.PlayOneShot(clip);
     }

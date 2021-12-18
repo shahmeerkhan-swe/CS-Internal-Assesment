@@ -104,6 +104,8 @@ MonoBehaviour:
   movementSpeed: 4
   projectilePrefab: {fileID: 8090255597504472308, guid: 20b4e93e02cad0e49a962427721b2713, type: 3}
   hitEffect: {fileID: 2802528151052095447, guid: a4ca574b0279b324ca97e994775cc529, type: 3}
+  throwSound: {fileID: 8300000, guid: b2edfd40873655249ba0e01a5cf705be, type: 3}
+  hitSound: {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}
 --- !u!50 &3944949588691403929
 Rigidbody2D:
   serializedVersion: 4
