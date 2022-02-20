@@ -9,7 +9,7 @@ public class RubyController : MonoBehaviour
     public float timeInvincible = 2.0f;
 
     public int health { get { return currentHealth; }}
-    int currentHealth; 
+    public int currentHealth; 
 
     Rigidbody2D rigidbody2D;
     float Horizontal;
@@ -84,6 +84,8 @@ public class RubyController : MonoBehaviour
             }
         }
 
+        
+
     }
 
      void FixedUpdate()
@@ -111,6 +113,9 @@ public class RubyController : MonoBehaviour
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         HealthBarUI.instance.SetValue(currentHealth / (float)maxHealth);
+
+      
+
     }
 
     void Launch()
@@ -128,6 +133,7 @@ public class RubyController : MonoBehaviour
         audioSource.PlayOneShot(clip);
     }
 
+   
 
 
 

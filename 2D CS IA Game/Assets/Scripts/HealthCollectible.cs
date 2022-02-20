@@ -19,6 +19,9 @@ public class HealthCollectible : MonoBehaviour
                 Destroy(gameObject);
 
                 controller.PlaySound(collectedClip);
+
+                ScoreManager.instance.AddPoint();
+
             }
            
         }
