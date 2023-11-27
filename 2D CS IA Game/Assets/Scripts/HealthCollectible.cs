@@ -27,10 +27,4 @@ public class HealthCollectible : MonoBehaviour
         }
 
     } 
-
-
-
-
-
-
 }
